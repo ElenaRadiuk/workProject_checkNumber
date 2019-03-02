@@ -1,0 +1,210 @@
+/* check style */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+@font-face {
+    font-family: 'Hero Light';
+    src: url(fonts/HeroLight-Regular.ttf);
+}
+.wrapper-check {
+    font-family: 'Open Sans', sans-serif;
+    margin: 25px 10px;
+}
+
+.wrapper-check {
+    max-width: 700px;
+    -webkit-box-shadow: 0px 0px 42px 0px rgba(0,0,0,0.40);
+    -moz-box-shadow: 0px 0px 42px 0px rgba(0,0,0,0.40);
+    box-shadow: 0px 0px 42px 0px rgba(0,0,0,0.40);
+    border-radius: 5px;
+}
+
+.wrapper-check-title {
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    margin-bottom: 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 5px 5px 0 0;
+}
+
+.check-block {
+    display: flex;
+}
+
+.checkblock-input {
+    width: 100%;
+    max-width: 405px;
+    box-sizing: border-box;
+    padding: 50px 40px 60px;
+}
+
+.checkblock-input input.number {
+    border: none;
+    height: 62px;
+    width: 100%;
+    max-width: 320px;
+    background-color: #ffc900;
+    padding: 15px 20px 15px 40px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Hero Light', sans-serif;
+    font-size: 48px;
+    color: #000000;
+}
+
+.checkblock-input .input-wr {
+    position: relative;
+    border: 3px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.4);
+}
+
+.checkblock-input .input-wr .input-txt{
+    background: url(img/eu.png) no-repeat 3px 3px #00bdff;
+    height: 100%;
+    width: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.checkblock-input .input-wr .input-txt span{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 4px;
+    margin-left: 2px;
+}
+
+.checkblock-input [type="submit"] {
+    padding: 16px;
+    background-color: black;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    width: 100%;
+    cursor: pointer;
+    transition: all ease .4s;
+}
+
+.checkblock-input [type="submit"]:hover {
+    background-color: red;
+}
+
+.checkblock-input input.number::-webkit-input-placeholder {
+    color: #000000;
+}
+
+.checkblock-input label {
+    font-size: 14px;
+    color: #909090;
+    letter-spacing: 1px;
+    padding-bottom: 3px;
+    padding-top: 5px;
+    display: inline-block;
+}
+
+.checkblock-list {
+    box-sizing: border-box;
+    padding: 50px 40px 60px;
+    border-radius: 0 0 5px 0;
+    background-color: #f0f0f0;
+    width: 100%;
+    max-width: 300px;
+}
+
+.checkblock-list legend{
+    font-weight: 600;
+    color: #00bdff;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.checkblock-list form p{
+    margin-bottom: 5px;
+}
+
+.checkblock-list label{
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.checkblock-list input[type=checkbox] {display: none;}
+
+.checkblock-list input[type=checkbox] + label:before {
+    content: "\2714";
+    color: transparent;
+    display: inline-block;
+    background-color: #00bdff;
+    border-radius: 3px;
+    font-size: 20px;
+    line-height: 24px;
+    margin: -5px 20px 0 0;
+    height: 22px;
+    width: 24px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.checkblock-list input[type=checkbox]:checked + label:before {
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+    .check-block {
+        display: block;
+    }
+
+    .checkblock-input {
+        width: 100%;
+        max-width: none;
+        padding: 35px 20px 40px;
+    }
+
+    .checkblock-input input.number {
+        display: block;
+        max-width: none;
+        height: 60px;
+        font-size: 42px;
+        padding: 15px 20px 15px 50px;
+    }
+
+    .checkblock-input [type="submit"] {
+        font-size: 16px;
+    }
+
+    .wrapper-check-title {
+        font-size: 20px;
+        padding: 15px 20px;
+        font-weight: 400;
+    }
+
+
+    .checkblock-list {
+        padding: 40px 20px;
+        border-radius: 0 0 5px 5px;
+        max-width: none;
+    }
+}
+
+@media (max-device-height: 480px){
+    .checkblock-list {
+        display: none;
+    }
+}
+
+/* end check style  */
